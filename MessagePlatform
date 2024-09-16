@@ -1,0 +1,3 @@
+public interface MessagePlatform {
+    void sendMessage(String recipient, String message);
+}
