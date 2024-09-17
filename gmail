@@ -1,0 +1,6 @@
+public class Gmail implements MessagePlatform {
+    @Override
+    public void sendMessage(String recipient, String message) {
+        System.out.println("Gmail 발송: " + message + " 수신자: " + recipient);
+    }
+}
