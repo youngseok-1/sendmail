@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        CommunicationPlatform gmail = new Gmail();
+        CommunicationPlatform naverMail = new NaverMail();
+        CommunicationPlatform discord = new Discord();
+
+        CommunicationPlatform[] platforms = { gmail, naverMail, discord };
+
+        for (CommunicationPlatform platform : platforms) {
+            platform.sendMessage("안녕하세요!");
+        }
+    }
+}
